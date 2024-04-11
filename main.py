@@ -17,11 +17,7 @@ class InternetSpeedTwitterBot:
 
     def get_internet_speed(self):
         self.driver.get("https://www.speedtest.net/")
-
-        # Depending on your location, you might need to accept the GDPR pop-up.
-        # accept_button = self.driver.find_element(By.ID, value="_evidon-banner-acceptbutton")
-        # accept_button.click()
-
+        
         time.sleep(3)
 
         go_button = self.driver.find_element(By.CSS_SELECTOR, value=".start-button a")
